@@ -5,6 +5,7 @@ import 'package:flutter_application_3/Stackwidget.dart';
 import 'package:flutter_application_3/Stateex.dart';
 import 'package:flutter_application_3/StrawberryApp.dart';
 import 'package:flutter_application_3/Ui.dart';
+import 'package:flutter_application_3/Gridview';
 
 class FirstScreen extends StatefulWidget {
   @override
@@ -174,6 +175,25 @@ class _FirstScreenState extends State<FirstScreen> {
               ),
               child: Text(
                 "Example of ListTile",
+                style: TextStyle(fontSize: 16, color: Colors.white),
+              ),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => Gridview()),
+                );
+              },
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blueAccent,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
+                ),
+              ),
+              child: Text(
+                "Example of GridView",
                 style: TextStyle(fontSize: 16, color: Colors.white),
               ),
             ),
