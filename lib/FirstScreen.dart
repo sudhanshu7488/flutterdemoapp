@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_3/Gridviewex.dart';
 import 'package:flutter_application_3/Listtileex.dart';
 import 'package:flutter_application_3/Listviewbuilder.dart';
 import 'package:flutter_application_3/Stackwidget.dart';
 import 'package:flutter_application_3/Stateex.dart';
 import 'package:flutter_application_3/StrawberryApp.dart';
 import 'package:flutter_application_3/Ui.dart';
-import 'package:flutter_application_3/Gridview';
 
 class FirstScreen extends StatefulWidget {
   @override
@@ -181,9 +181,9 @@ class _FirstScreenState extends State<FirstScreen> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacement(
+                Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => Gridview()),
+                  MaterialPageRoute(builder: (context) => Gridviewex()),
                 );
               },
               style: ElevatedButton.styleFrom(
